@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newest Tab</title>
+  </head>
+  <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 25%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+  <body style="background-color:#DFD7AC;">
+    <div id="app"></div>
+   <h1 style="padding:10px;text-align:center;font-family:'Courier New', Courier, monospace;font-size:90px"id="clock">00:00: </h1>
+
+        <script>
+        function updateTime() {
+            const now = new Date();
+            // Configured to show only hours and minutes
+            document.getElementById('clock').textContent = now.toLocaleTimeString('en-US', {
+                hour: 'numeric',
+                minute: '2-digit'
+            });
+        }
+
+        // Run the function immediately
+        updateTime(); 
+        // Update the time every 1000 milliseconds to keep it accurate
+        setInterval(updateTime, 1000); 
+    </script>
+    <center>
+  <form action="https://www.google.com/search" method="get" target="blank">
+    <input style="height:40px;width:70%;border-radius:25px;color:white;background-color:#B19E4E;"type="text" name="q" placeholder="     Search with Google, type then press enter." required>
+   
+  </form>
+  <table>
+  <tr>
+
+    <td>
+        <a href="https://stardance.hackclub.com" target="_blank" rel="noopener noreferrer">
+            <button type="button">
+                <img src="hc.png" alt="stardance" width="20" height="20">son</button>
+        </a>
+    </td>
+    <td>
+        <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">
+            <button type="button">son</button></a></td>
+    <td>
+        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            <button type="button">son</button>
+        </a>
+    </td>
+    
+  </tr>
+</table>
+ </center>
